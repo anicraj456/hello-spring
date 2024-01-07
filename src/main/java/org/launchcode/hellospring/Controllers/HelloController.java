@@ -56,8 +56,8 @@ import org.springframework.web.bind.annotation.GetMapping;
             if ("".equals(name) || name == null) {
                 name = "World";
             }
-            //System.out.println("name-------"+ name);
-            //System.out.println("language-----"+ language);
+            System.out.println("name-------"+ name);
+            System.out.println("language-----"+ language);
             return createMessage(name, language);
         }
         public static String createMessage(String n, String l) {
@@ -78,6 +78,7 @@ import org.springframework.web.bind.annotation.GetMapping;
             else if (l.equals("german")) {
                 greeting = "Hallo";
             }
+
             return greeting + " " + n;
         }
     }
